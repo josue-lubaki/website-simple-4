@@ -1,5 +1,7 @@
-<svg id="logo-white" xmlns="http://www.w3.org/2000/svg" width="159.379" height="64.583" viewBox="0 0 159.379 64.583">
-  <text id="UQTR" transform="translate(0 54.583)" fill="#fff" font-size="38" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">UQTR</tspan></text>
-  <rect id="Rectangle_7" data-name="Rectangle 7" width="10.647" height="34.845" rx="5.324" transform="translate(149.797) rotate(45)" fill="#7843bb"/>
-  <rect id="Rectangle_8" data-name="Rectangle 8" width="10.647" height="34.845" rx="5.324" transform="translate(151.85 18.293) rotate(45)" fill="#00cc80"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="214.777" height="86.583" viewBox="0 0 214.777 86.583">
+  <g id="logo" transform="translate(-193 -34.417)">
+    <text id="UQTR" transform="translate(193 108)" font-size="51" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">UQTR</tspan></text>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="13.896" height="45.477" rx="6" transform="translate(395.271 34.417) rotate(45)" fill="#7843bb"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="13.896" height="45.477" rx="6" transform="translate(397.951 58.292) rotate(45)" fill="#00cc80"/>
+  </g>
 </svg>

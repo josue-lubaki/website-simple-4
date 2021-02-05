@@ -3,122 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Maquette</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ma première page! </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="container">
-	    <!-- L'entete de notre site elle contient la bannière et la barre de navigation -->
-	    <header>
+    <div class="container">
+        
+        <header>
             <img src="/images/logo.svg" 
             alt="logo MonCompanie" class="logo">
-	        <!-- --------------------------------------------------------------------------------------- -->
-			<!-- La barre de Navigation (celle qui contient les grands liens du site) -->
-			
-	        <nav>
+
+            <nav>
                 <a href="#" class="hide-desktop">
                     <img src="/images/ham.svg" 
                     alt="toggle menu" class="menu" id="menu">
                 </a>
-
-	            <ul class="show-desktop hide-mobile" id="nav">
-                    <li class="exit-btn hide-desktop" id="exit">
-	                	<a href="#"><img src="images/exit.svg" alt="exit menu"></a>
-	            	</li>                    
-                    <li class="lien target">
-	                	<a href="#"><img src="images/home.png"><span>Acceuil</span></a>
-	            	</li>
-	            	<li>
-	                	<a href="#"><img src="images/picture.png"><span>Gallerie</span></a>
-	            	</li>
-	            	<li>
-	                	<a href="#"><img src="images/article.png"><span>Acticles</span></a>
-	            	</li>
-	            	<li>
-	                	<a href="#"><img src="images/blog.png"><span>Blog</span></a>
-	            	</li>
-	            	<li>
-	                	<a href="#"><img src="images/contact.png"><span>Contact</span></a>
-	            	</li>
-	            </ul>
-	        </nav>
-
-        </header>
-    </div>
-    <div class="slide">
-        <div class="slideContent">
-            <div class="container">
-                <div class="text1">COMMUNAUTE BETA CODE</div>
-                <div class="text2">Ta seule et unique limite est ta créativité et ton imagination</div>
-    
-                <div class="BtnDown hide-mobile show-desktop">
-                    <img src="images/downArrow.png" alt="" class="btn1">
-                    <img src="images/downArrow2.png" alt="" class="btn2" draggable="false">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="white-container">
-        <div class="container">
-            <div class="titre">PENSONS SIMPLE ET BEAU</div>
-            <div class="beta">BETA</div>
-            <div class="content">
-                <div><img src="images/crayon.png" alt="img" class="present"> <img src="images/crayon2.png" alt="img" class="hover"> <br> 
-                    <span>Designer</span></div>
-                <div><img src="images/code.png" alt="img" class="present"> <img src="images/code2.png" alt="img" class="hover"> <br> 
-                    <span>Integrateur Front-End</span></div>
-                <div><img src="images/php.png" alt="img" class="present"> <img src="images/php2.png" alt="img" class="hover"> <br> 
-                    <span>Integrateur Back-End</span></div>
-                <div><img src="images/survey.png" alt="img" class="present"> <img src="images/survey2.png" alt="img" class="hover"> <br> 
-                    <span>Analyste</span></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="green-container">
-        <div class="container">
-            <div class="titre">A PROPOS DE NOUS</div>
-            <div class="code">CODE</div>
-            <div class="content">
-                <div class="comma1"><img src="images/comma.png" alt="img"><img src="images/comma.png" alt="img"></div>
-                <div class="text">Nous sommes un groupe de jeune murrit par une grande soif de connaissance, qui avons découvert bien assez tôt
-                    une meilleur façon pour asssouvir cette soif, en nous regroupant tous autant que nous sommes sans restriction d'âge ou 
-                    de niveau d'étude au sein d'une même communauté afin de partager les connaissances apprises et
-                    l'expérience acquise à tous et chacun ...
-                </div>
-                <div class="comma2"><img src="images/comma.png" alt="img"><img src="images/comma.png" alt="img"></div>					
-            </div>
-        </div>
+                <!--show-desktop montre dans desktop,
+                    hide pour cacher phone-->
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <!--lien cliquable-->
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li> 
+                </ul>
+            </nav>
         
+        </header>
+        <section> 
+            <img src="/images/server.svg" alt="server graphic" class="server">
+            <h1>On vous offre les meilleurs services!</h1>
+            <p class="subhead"> On diminue vos dépenses</p>
+            <img src="/images/scroll.svg" 
+            alt="défiler vers le bas" class="scroll hide-mobile show-desktop">
+        </section>
+
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="/images/icon-1.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua</p>
+                </li>
+                <li>
+                    <img src="/images/icon-2.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua</p>
+                </li>
+                <li>
+                    <img src="/images/icon-3.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="/images/user1.png" alt="image de témoignage de l'utilisateur">
+                        <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea fuga incidunt ut dolorum, impedit voluptates, minus pariatur ratione quae magnam vitae nulla mollitia quod! Placeat dignissimos magni laudantium? Impedit, fugit.</blockquote>
+                        <figcaption>John Abbott</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/images/user2.png" alt="image de témoignage de l'utilisateur">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur voluptas dolorum sequi, cumque sint eaque optio error, laboriosam corrupti ullam soluta earum. Blanditiis magnam amet in ullam cupiditate numquam.</blockquote>
+                        <figcaption>Yves Abbott</figcaption>
+                    </figure> 
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="container">
+        <h2>Commencer par ici! </h2>
+        <a href="#" class="cta">cliquez</a>
+
     </div>
 
     <footer>
-        <div class="container">
-            <div class="copyright">
-                <div class="text1">Copyright 2021</div> 
-                <div class="text2">Tous droits reservés</div>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="/images/logo-white.svg" alt="logo" class="logo">
+                </a>
+                <p class="address"> 3351 Boulevard des Forges, Trois-Rivières<br>
+                    Canada</p>
+                <ul class="footer-links">
+                    <li> <a href="#"> Terms of Services</a> </li>
+                    <li> <a href="#"> Privacy Policy</a> </li>
+                </ul>
             </div>
-            <div class="txt_logo">	BETA CODE</div>
+
         </div>
     </footer>
+    
+<script>
 
-    <script>
-        var exit = document.getElementById('exit');
-        var nav = document.getElementById('nav');
-        var menu = document.getElementById('menu');
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
 
-        menu.addEventListener('click',function(e){
-            nav.classList.toggle("hide-mobile");
-            e.preventDefault();
-        });
+    menu.addEventListener('click', function(e){
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
 
-        exit.addEventListener('click',function(e){
-            nav.classList.toggle("hide-mobile");
-            e.preventDefault();
-        });
-    </script>
-	
+    exit.addEventListener('click', function(e){
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+
+
+</script>
+
 </body>
+
+
 </html>
+
+

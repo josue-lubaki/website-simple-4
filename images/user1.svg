@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="129" viewBox="0 0 129 129">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 200 300">
+      <image width="200" height="300" xlink:href="person_1-image.jpg"/>
+    </pattern>
+  </defs>
+  <circle id="person_1" cx="64.5" cy="64.5" r="64.5" fill="url(#pattern)"/>
+</svg>
