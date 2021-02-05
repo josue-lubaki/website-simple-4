@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Lato", sans-serif;
+}
+
+p, blockquote{
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    padding: .8em 0;
+}
+
+/* Cacher le menu pour la version mobile */
+.hide-mobile{
+    display:none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 130px;
+    margin-left: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    width: 25px;
+    margin-top: 50%;
+    margin-right: 5px;
+}
+
+body > .container{
+    background-color: #232323;
+}
+body > .container a{
+    color: white;
+}
+
+/********* Partie Slide **********/
+.slide{
+    background-image: url('/images/Fotolia.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.slide .slideContent{
+    background-color: rgba(255,255,255, .65);
+    padding: 8em 0 5em;
+    font-weight: bold;
+}
+
+.slide .text1{
+    font-size: 1.6em;
+    word-spacing: .25em;
+    color: #333333;
+}
+
+.slide .text2{
+    font-size: 1em;
+    color: rgb(29, 151, 5);
+    letter-spacing: .15em;
+}
+
+/********* Partie white-container ************/
+.white-container .container{
+    background-color: white;
+    padding: 0;
+}
+
+.titre, .code, .beta{
+    font-weight: bold;
+    font-family: "arial";
+}
+
+/*Style Titre Pensons simple et beau*/
+.white-container .titre, .green-container .titre{
+    color: rgb(29, 151, 5);
+    position: relative;
+    top: 3.4em;
+}
+
+.white-container .beta , .green-container .code{
+    color : rgba(29, 151, 5 , 0.25) ;
+    font-size: 5.1em ;
+}
+
+/********** White-container uniquement ********/
+.white-container span{
+    color: rgb(29, 151, 5); 
+    background-color: rgba(29, 151, 5,0.1);
+    display: inline-block;
+    width: calc(90% - 2em);
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.white-container .content img{
+    width: 3.5em;
+    height: 3.5em;
+    border: 1px solid rgb(29, 151, 5);
+    padding: 1.5em;
+    margin-bottom: 3px;
+}
+
+.white-container .content div:hover img.present{
+    display: none ;
+}
+
+.white-container .content div img.hover{
+    display: none ;        
+    background-color: rgb(29, 151, 5);     
+}
+
+.white-container .content div:hover img.hover{
+    display: inline;
+}
+
+.white-container .content div:hover span{
+    background-color: rgba(29, 151, 5,0.4) ;
+}
+
+.white-container .content div{
+    margin: 2.5em 0;
+}
+
+
+/************* green-container uniquement ****************/
+
+.green-container{
+    background-color: rgb(29, 151, 5);
+}
+
+.green-container .titre{
+    color: white;
+}
+
+.green-container .code{
+    color: rgba(255, 255, 255 , 0.2);
+}
+
+.green-container .content div {
+    display: inline-block;/*DEVEROUILLER POUR PC*/
+}
+
+.green-container .comma1, .green-container .comma2{
+    opacity: 0.4 ;
+}
+.green-container .comma1{
+    vertical-align: top ;
+}
+.green-container .comma2{
+    vertical-align: bottom ; 
+}
+
+.green-container .text{
+    width: 80%;
+    color: white ;
+    text-align: justify ;
+}
+
+/*********** Footer **********/
+footer{
+    background-color: #232323;
+    color: white ;
+    padding: 1.2em;
+}
+
+.copyright{
+    display: inline-block;
+    font-weight: 400 ; 
+    opacity: 0.4 ;
+}
+
+footer .txt_logo{
+    font-weight: bold;
+    font-size: 1.1em;
+    position: absolute;
+    right: .3em;
+    opacity: 0.2 ;
+}
+
+/* Ham */
+nav ul{
+    position: fixed;
+    width: 45%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background-color: rgb(36,41,44);
+    height: 75%;
+    z-index: 5;
+    padding-top: 2.5em;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: calc(100% - 1em);
+    padding: 1em 2em;
+}
+
+nav ul li a img{
+    width: 20px ;
+    position: relative;
+    top: 4px ;
+    margin-right: 5px ;
+}
+
+nav ul li:hover{
+    background-color: rgba(55, 124, 41, 0.4);
+}
+
+.exit-btn{
+    margin-top: -1.3em;
+    margin-bottom: 1.1em;
+    text-align: right;
+    padding: 0 1.2em;
+}
+
+.exit-btn img{
+    width: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:510px){
+    .comma1 img, .comma2 img{
+        width: 20px;
+    }
+}
+
+@media only screen and (min-width : 650px){
+    .slideContent .text2{
+        padding: 0 1.8em;
+        transition: all 0.6s ease;
+    }
+    .slideContent .text1{
+        font-size: 1.8em;
+        transition: all 0.6s ease;
+    }
+    .slideContent .text2{
+        font-size: 1.2em;
+        transition: all 0.6s ease;
+    }
+    .green-container .content div {
+        display: inline-block;/*DEVEROUILLER POUR PC*/
+    }
+    .comma1 img, .comma2 img{
+        width: 25px;
+    }
+}
+
+@media only screen and (min-width: 875px){
+    .white-container span{
+        width: 70%;
+        padding: 1em;
+        transition: width 0.6s ease;
+    }
+    .slideContent .text1{
+        font-size: 2.2em;
+        transition: all 0.6s ease;
+    }
+    .slideContent .text2{
+        font-size: 1.5em;
+        transition: all 0.6s ease;
+    }
+    .slide{
+        background-size: 100% 100%;
+        transition: all 0.6s ease;
+    }
+    .comma1 img, .comma2 img{
+        width: 25px;
+    }
+    .green-container .text{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .comma1 img, .comma2 img{
+        width: 25px;
+    }
+
+    footer .copyright{
+        font-size:1.05em;
+    }
+
+    .green-container .content{
+        font-size: 1em;
+        margin: 0 2.5em;
+    }
+
+    .green-container .container{
+        padding: 0 0 2em 0;
+    }
+
+    .show-desktop{
+        display: block;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        height: auto;
+        padding-top: 0;
+        background-color: inherit;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        color: black;
+        padding: 1em .5em;
+        font-size: 1.1em;
+        text-align: right;
+    }
+
+    nav ul li:hover{
+        background-color: inherit;
+    }
+
+    .white-container span{
+        width: 120px;
+        padding: .5em;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .white-container .content{
+        display: flex;
+        justify-content: center;
+    }
+
+    .white-container .content div{
+        margin: 1.5em auto 1.5em auto;
+    }
+
+    .white-container , .green-container {
+        padding: 15px 0 15px 0;
+        text-align: center ;
+        height: 7.5em ;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out ;
+    }
+
+    /* Pour cacher le texte */
+    .green-container .container .code{
+        margin: 0 0 20px 0;
+    }
+    .white-container:hover , .green-container:hover {
+        height:18.75em ;
+    }
+
+    /* BtnDown */
+    .BtnDown{
+        height: 40px;
+        width: 45px;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 100px;
+        cursor: pointer;
+        animation: scrolling 1.2s infinite alternate ease-in;
+    }
+
+    .BtnDown:hover .btn2{
+        display: inline;
+    }
+
+    .BtnDown:hover .btn1{
+        display: none;
+    }
+
+    .BtnDown .btn1, .BtnDown .btn2{
+        border :2px solid rgb(29,151,5);
+        border-radius: 50%;
+        padding: .15em;
+    }
+
+    .BtnDown .btn2{
+        background-color:rgb(29,151,5);
+        display: none;
+    }
+
+    .BtnDown .btn2:active{
+        background-color: rgb(37,190,6);
+        border: 1px solid rgb(37,190,6);
+    }
+
+    @keyframes scrolling {
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform:translateY(25px);
+        }
+    }
+
+    @media only screen and (min-width:1600px){
+        .BtnDown .btn1, .BtnDown .btn2{
+            border :3px solid rgb(29,151,5);
+        }
+
+        .container:not(body > .container){
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    
+}
