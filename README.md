@@ -1,3 +1,3 @@
 # website-simple-4
-
-integration d'une maquette conçu depuis l'application XD adobe
+## https://josue-lubaki.github.io/website-simple-4/ <br>
+Maquette site web partant du prototype XD Adobe au code complet
